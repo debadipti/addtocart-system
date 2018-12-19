@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+      <!-- Shopping List -->
+      <div id="p-list">
+        <h1>Shopping Cart</h1>
+        <!-- Single Item -->
+        <div class="p-single">
+          <div class="p-name">
+            <h2>Product 01</h2>
+            <p>Product Description Goes Here</p>
+          </div>
+          <div class="p_quant">
+            <span class="p_add"><i class="material-icons">add</i></span>
+            <span class="p_count">1</span>
+            <span class="p_remove"><i class="material-icons">remove</i></span>
+          </div>
+          <div class="p-price">$ <span>125.30</span></div>
+          <div class="cart-action"><i class="material-icons">delete</i></div>
+        </div>
+        <!-- Single Item -->
+        <div class="p-single">
+          <div class="p-name">
+            <h2>Product 02</h2>
+            <p>Product Description Goes Here</p>
+          </div>
+          <div class="p_quant">
+            <span class="p_add"><i class="material-icons">add</i></span>
+            <span class="p_count">1</span>
+            <span class="p_remove"><i class="material-icons">remove</i></span>
+          </div>
+          <div class="p-price">$ <span>135.40</span></div>
+          <div class="cart-action"><i class="material-icons">delete</i></div>
+        </div>
+      </div>
+      <!-- Cart Details -->
+      <div id="cart">
+        <h1>Order Summary</h1>
+        <div class="c-details">
+          <div class="c-p">
+            Product 01 <span>x<strong id="c-p-c">1</strong></span>
+          </div>
+          <div class="c-p">
+            Product 02 <span>x<strong id="c-p-c">1</strong></span>
+          </div>
+        </div>
+        <div class="cod">
+          <label for="checkbox"
+            ><input type="checkbox" id="checkbox" /> cash on delivery
+            <span class="checkbox-span"></span>
+          </label>
+          <span>$ 2.30</span>
+        </div>
+        <div class="c-total">
+          <h2>Cart Total</h2>
+          <p>$ <span>340.45</span></p>
+        </div>
+        <button class="btn">Proceed to Payment</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
