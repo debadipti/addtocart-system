@@ -65,7 +65,7 @@ body {
         font-size: 1.2em;
         font-weight: 200;
       }
-      .p-quant {
+      .p_quant {
         background-color: #fefefe;
         flex: 2;
         order: 3;
@@ -82,6 +82,11 @@ body {
           i {
             margin-top: 0.2em;
             color: #888;
+            cursor: pointer;
+            &:hover {
+              background-color: #f4f4f4;
+              color: #444;
+            }
           }
         }
       }
@@ -90,8 +95,12 @@ body {
         order: 4;
         text-align: right;
         i {
-          color: #777;
+          color: #999;
           margin-top: 0.2em;
+          cursor: pointer;
+          &:hover {
+            color: #444;
+          }
         }
       }
     }
@@ -137,6 +146,24 @@ body {
       border-bottom: 1px solid #eee;
       label {
         flex: 1;
+        position: relative;
+        cursor: pointer;
+        input {
+          opacity: 0;
+          margin-right: 6px;
+        }
+        input:checked ~ span.checkbox-span {
+          background-color: #666;
+          border-color: #666;
+        }
+        span.checkbox-span {
+          position: absolute;
+          top: 3px;
+          left: -2px;
+          height: 14px;
+          width: 14px;
+          border: 1px solid #999;
+        }
       }
     }
     .c-total {
