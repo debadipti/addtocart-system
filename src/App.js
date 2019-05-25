@@ -1,11 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
+import Cart from "./components/Cart";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello world!</h1>
-    </div>
-  );
+import "./stylesheets/main.scss";
+
+export default class App extends Component {
+  render() {
+    return <Cart />;
+  }
 }
-
-export default App;
