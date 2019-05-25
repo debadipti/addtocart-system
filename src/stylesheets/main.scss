@@ -1,5 +1,5 @@
-$background: red;
+// base styles
+@import "./base";
 
-body {
-  background: $background;
-}
+// component styles
+@import "./components/cart";
